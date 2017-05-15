@@ -23,11 +23,15 @@ module.exports = {
         root: __dirname,
         modulesDirectories: [
             'node_modules',
-            './app/components'
+            './app/components',
+            './app/API'
         ],
         alias: {
             Main: 'app/components/Main.jsx',
             ApplicationStyles: 'app/styles/app.scss',
+            actions: 'app/actions/actions.jsx',
+            reducers: 'app/reducers/reducers.jsx',
+            configureStore: 'app/store/configureStore.jsx'
         },
         extensions: ['', '.js', '.jsx']
     },
